@@ -1,0 +1,22 @@
+# deps
+node_modules/
+
+# next
+.next/
+out/
+
+# env
+.env
+.env.local
+.env.*.local
+
+# db
+*.db
+*.db-journal
+
+# uploads
+public/uploads/
+
+# misc
+.DS_Store
+*.tsbuildinfo

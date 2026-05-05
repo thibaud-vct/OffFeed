@@ -1,0 +1,44 @@
+{
+  "name": "instawall",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --hostname 0.0.0.0",
+    "build": "next build",
+    "start": "next start",
+    "db:migrate": "prisma migrate dev",
+    "db:push": "prisma db push",
+    "db:studio": "prisma studio",
+    "db:seed": "tsx prisma/seed.ts"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.14.0",
+    "@types/node-cron": "^3.0.11",
+    "adm-zip": "^0.5.14",
+    "bcryptjs": "^2.4.3",
+    "clsx": "^2.1.1",
+    "next": "14.2.3",
+    "next-auth": "^4.24.7",
+    "node-cron": "^4.2.1",
+    "otpauth": "^9.5.1",
+    "qrcode": "^1.5.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-easy-crop": "^5.5.7",
+    "sharp": "^0.33.4"
+  },
+  "devDependencies": {
+    "@types/adm-zip": "^0.5.5",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/node": "^20.14.0",
+    "@types/qrcode": "^1.5.6",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "prisma": "^5.14.0",
+    "tailwindcss": "^3.4.4",
+    "tsx": "^4.15.6",
+    "typescript": "^5.4.5"
+  }
+}

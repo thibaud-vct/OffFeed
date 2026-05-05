@@ -1,0 +1,33 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Post {
+  id            String   @id @default(cuid())
+  caption       String   @default("")
+  // Relative path under /public/uploads or an external URL
+  imagePath     String
+  // For carousels: JSON array of additional image paths
+  extraImages   String   @default("[]")
+  tags          String   @default("[]") // JSON array of strings
+  takenAt       DateTime @default(now())
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  published     Boolean  @default(true)
+  // Instagram metadata (populated after import or after publishing)
+  igMediaId     String?
+  igPermalink   String?
+  // Instagram scheduled publishing (null = publish immediately via button, or not scheduled)
+  igScheduledAt DateTime?
+  source        String   @default("manual") // "manual" | "import" | "instagram"
+}
+
+model Setting {
+  key   String @id
+  value String
+}

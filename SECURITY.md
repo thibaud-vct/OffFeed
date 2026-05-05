@@ -1,4 +1,4 @@
-# Sécurité — InstaWall
+# Sécurité — OffFeed
 
 > Dernière mise à jour : 2026-05-04
 
@@ -6,7 +6,7 @@
 
 ## Architecture de sécurité
 
-InstaWall est une application auto-hébergée à administrateur unique. La surface d'attaque est donc réduite : un seul compte, pas d'inscription, pas de données utilisateurs tiers.
+OffFeed est une application auto-hébergée à administrateur unique. La surface d'attaque est donc réduite : un seul compte, pas d'inscription, pas de données utilisateurs tiers.
 
 ---
 

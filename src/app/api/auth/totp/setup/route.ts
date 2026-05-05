@@ -21,7 +21,7 @@ export async function POST() {
     create: { key: "totpPendingSecret", value: secret },
   })
 
-  const issuer = titleRow?.value || "InstaWall"
+  const issuer = titleRow?.value || "OffFeed"
   const account = userRow?.value || "admin"
   const qr = await generateQRDataURL(secret, issuer, account)
 

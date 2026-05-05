@@ -3,7 +3,7 @@ import "./globals.css"
 import { PublicSessionProvider } from "@/components/PublicSessionProvider"
 
 export const metadata: Metadata = {
-  title: "InstaWall",
+  title: "OffFeed",
   description: "Personal photo wall",
 }
 

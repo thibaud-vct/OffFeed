@@ -14,7 +14,7 @@ export default async function AdminLayout({ children }: { children: React.ReactN
     where: { key: { in: ["siteTitle", "igUsername", "totpEnabled"] } },
   })
   const s = Object.fromEntries(settingRows.map((r) => [r.key, r.value]))
-  const username = s.siteTitle || "InstaWall"
+  const username = s.siteTitle || "OffFeed"
   const igUsername = s.igUsername || ""
   const igUrl = igUsername ? `https://www.instagram.com/${igUsername.replace(/^@/, "")}/` : null
   const totpEnabled = s.totpEnabled === "true"

@@ -35,7 +35,7 @@ export default async function HomePage({
   ])
 
   const s = Object.fromEntries(settingRows.map((r) => [r.key, r.value]))
-  const username = s.siteTitle || "InstaWall"
+  const username = s.siteTitle || "OffFeed"
   const igUsername = s.igUsername || ""
   const igUrl = igUsername
     ? `https://www.instagram.com/${igUsername.replace(/^@/, "")}/`

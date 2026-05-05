@@ -23,7 +23,7 @@ export default async function PostPage({ params }: { params: { id: string } }) {
   const s = Object.fromEntries(settings.map((r) => [r.key, r.value]))
 
   const profile = {
-    username: s.siteTitle || "InstaWall",
+    username: s.siteTitle || "OffFeed",
     name: s.profileName || "",
     avatarPath: s.profileAvatar || "",
   }
